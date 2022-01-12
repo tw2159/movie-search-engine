@@ -1,0 +1,122 @@
+/* --- Universal Styling ------------------------------ */
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: sans-serif;
+}
+.card {
+  flex-direction: row;
+  margin-bottom: 20px;
+}
+.btn {
+  background-color: #9163cb !important;
+  border-color: #9163cb !important;
+  width: 100%;
+}
+.btn:hover {
+  background-color: #b185db !important;
+  border-color: #b185db !important;
+}
+.btn:active,
+.btn:focus {
+  background-color: #a06cd5 !important;
+  border-color: #a06cd5 !important;
+  box-shadow: none;
+  outline: 0;
+}
+
+/* --- Navigation ------------------------------------- */
+
+.navbar {
+  background-color: #6247aa;
+  border-bottom: 2px solid #7251b5;
+}
+.navbar .navbar-brand {
+  color: #c19ee0;
+  font-size: 30px;
+  font-weight: 600;
+}
+.navbar .navbar-nav .nav-link {
+  color: #c19ee0;
+  font-size: 18px;
+  font-weight: 500;
+}
+.navbar .navbar-brand:hover {
+  color: rgba(255, 255, 255, .75);
+}
+.navbar .navbar-brand:hover .logo path {
+  fill: rgba(255, 255, 255, .75);
+}
+.logo {
+  height: 36px;
+  margin: 0 10px 6px 0;
+  width: 40px;
+}
+.logo path {
+  fill: #c19ee0;
+}
+
+/* --- Modal ------------------------------------------ */
+
+.nav-pills .nav-link.active, .nav-pills .show >.nav-link {
+  background-color: #9163cb;
+}
+.nav-pills .nav-link {
+  color: #9163cb;
+}
+
+/* --- Jumbotron -------------------------------------- */
+
+.jumbotron {
+  background-color: #6247aa;
+}
+
+/* --- Search Results --------------------------------- */
+
+.movie-poster {
+  margin: 1.25rem;
+  width: 260px;
+}
+.movie-empty-poster {
+  background-color: #555;
+  margin: 1.25rem;
+  width: 260px;
+}
+.card-body {
+  width: calc(100% - 260px - 2.5rem);
+}
+.movie-details {
+  color: #666;
+  font-size: 15px;
+}
+.about, .cast, .director, .writer {
+  padding: 10px 0;
+}
+.about:before, .cast:before, .director:before, .writer:before {
+  display: block;
+  font-size: 15px;
+  font-weight: bold;
+}
+.about:before {
+  content: "About";
+}
+.cast:before {
+  content: "Cast";
+}
+.director:before {
+  content: "Director";
+}
+.writer:before {
+  content: "Writer";
+}
+
+/* --- Saved Movies ----------------------------------- */
+
+.saved-movies-results {
+  margin-top: 10px;
+}
